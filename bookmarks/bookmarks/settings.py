@@ -25,7 +25,7 @@ SECRET_KEY = 'dy_owmuo9h%lwib(j3b+uqn5ny^rvfw3xp_=k0=u_mwz_81uc-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moja-witryna.pl', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = []#['moja-witryna.pl', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
     'django.contrib.admin',
-    'social_django',
+    #'social_django',
     'images.apps.ImagesConfig',
 ]
 
@@ -134,16 +134,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
-    'social.backends.facebook.Facebook20Auth2',
-    'social.backends.twitter.TwitterOAuth',
-    'social_core.backends.google.GoogleOAuth2',
+    #'social.backends.facebook.Facebook20Auth2',
+    #'social.backends.twitter.TwitterOAuth',
+    #'social_core.backends.google.GoogleOAuth2',
 )
 
-SOCIAL_AUTH_FACEBOOK_KEY = 'XXX'
-SOCIAL_AUTH_FACEBOOK_SECRET = 'XXX'
+#SOCIAL_AUTH_FACEBOOK_KEY = 'XXX'
+#SOCIAL_AUTH_FACEBOOK_SECRET = 'XXX'
 
-SOCIAL_AUTH_TWITTER_KEY = 'XXX'
-SOCIAL_AUTH_TWITTER_SECRET = 'XXX'
+#SOCIAL_AUTH_TWITTER_KEY = 'XXX'
+#SOCIAL_AUTH_TWITTER_SECRET = 'XXX'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'XXX'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'XXX'
+#SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'XXX'
+#SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'XXX'
