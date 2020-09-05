@@ -135,6 +135,7 @@ AUTHENTICATION_BACKENDS = (
     'account.authentication.EmailAuthBackend',
     'social.backends.facebook.Facebook20Auth2',
     'social.backends.twitter.TwitterOAuth',
+    'social_core.backends.google.GoogleOAuth2',
 )
 
 SOCIAL_AUTH_FACEBOOK_KEY = 'XXX'
@@ -142,3 +143,6 @@ SOCIAL_AUTH_FACEBOOK_SECRET = 'XXX'
 
 SOCIAL_AUTH_TWITTER_KEY = 'XXX'
 SOCIAL_AUTH_TWITTER_SECRET = 'XXX'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'XXX'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'XXX'
