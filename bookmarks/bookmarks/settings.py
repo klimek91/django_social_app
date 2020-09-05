@@ -25,7 +25,7 @@ SECRET_KEY = 'dy_owmuo9h%lwib(j3b+uqn5ny^rvfw3xp_=k0=u_mwz_81uc-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['moja-witryna.pl', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
     'django.contrib.admin',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -132,5 +133,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+    'social.backends.facebook.Facebook20Auth2',
 )
 
+SOCIAL_AUTH_FACEBOOK_KEY = 'XXX'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'XXX'

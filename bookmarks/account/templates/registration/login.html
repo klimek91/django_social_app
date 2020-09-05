@@ -22,4 +22,9 @@
         </form>
         <p><a href="{% url 'password_reset' %}">Zapomniałeś hasła?</a></p>
     </div>
+    <div class="social">
+        <ul>
+            <li class="facebook"><a href="{% url 'social:begin' 'facebook' %}">Zaloguj sie za pomocą konta facebook</a></li>
+        </ul>
+    </div>
 {% endblock %}
